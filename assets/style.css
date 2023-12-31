@@ -74,7 +74,7 @@ body {
     
 }
 
-.player-current-box {
+.player-round-box {
     background-color: #EB4D4D;
     color: #fff;
     width: 40%;
@@ -96,7 +96,7 @@ body {
 
 button {
     
-    width: 300px;
+    width: 150px;
     left: 50%;
     color: #1cb201;
     background: none;
@@ -107,14 +107,10 @@ button {
     cursor: pointer;
     font-weight: 300;
     transition: background-color 0.3s, color 0.3s;
+    
 }
 
 button:hover { font-weight: 600; } 
-
-
-.btn-new { top: 45px;}
-.btn-roll { top: 403px;}
-.btn-hold { top: 467px;} 
 
 .dice {
     position: absolute;

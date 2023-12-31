@@ -15,12 +15,12 @@
         <div class="row">
             <div class="col-md-6 h-100">
                 <div class="card">
-                    <div class="card-body active">
-                        <h5 class="card-title">Player 1</h5>
+                    <div class="card-body player-0-panel winner active">
+                        <h5 class="card-title" id="name-0">Player 1</h5>
                         <p class="card-text">Score: <span id="score-0">0</span></p>
                         <div class="player-round-box">
                             <div class="player-round-label">Round</div>
-                            <div class="player-round-score" id="current-0">11</div>
+                            <div class="player-round-score" id="current-0">0</div>
                         </div>
                     </div>
                 </div>
@@ -28,29 +28,28 @@
 
             <div class="col-md-6">
                 <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Player 2</h5>
+                    <div class="card-body player-1-panel winner">
+                        <h5 class="card-title" id="name-1">Player 2</h5>
                         <p class="card-text">Score: <span id="score-1">0</span></p>
-                        <div class="player-current-box">
-                            <div class="player-current-label">Current</div>
-                            <div class="player-current-score" id="current-1">0</div>
+                        <div class="player-round-box">
+                            <div class="player-round-label">Current</div>
+                            <div class="player-round-score" id="current-1">0</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row d-flex justify-content-center mt-4 mb-4 ">
-            <div class="">
-                <button class="btn btn-primary me-2">New game</button>
-                <button class="btn btn-success me-2">Roll dice</button>
-                <button class="btn btn-danger">Hold</button>
+            <div class="d-md-flex justify-content-md-center">
+                <button class="btn btn-primary me-2 js-btn-newGame">New game</button>
+                <button class="btn btn-success me-2 js-btn-roll">Roll dice</button>
+                <button class="btn btn-danger js-btn-hold">Hold</button>
             </div>
         </div>
-
-        <img src="./assets/img/dice-5.png" alt="Dice" class="mt-4 dice">
+        <img src="./assets/img/dice-5.png" alt="Dice" class="mt-4 dice js-dice">
     </div>
 
-    <script src="app.js"></script>
+    <script src="./assets/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
